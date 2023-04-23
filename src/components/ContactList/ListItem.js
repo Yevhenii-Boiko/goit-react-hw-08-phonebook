@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux';
-import { deleteContact } from 'redux/operations';
+import { deleteContact } from 'redux/contacts/operations';
 import { MdDelete } from 'react-icons/md';
 import { Item, ItemWrapper, Text, Button } from './ListItem.styled';
 
