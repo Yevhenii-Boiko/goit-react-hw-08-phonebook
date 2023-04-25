@@ -6,7 +6,6 @@ import { ListItem } from './ListItem';
 export const ContactList = () => {
   const contacts = useSelector(selectContacts);
   const filter = useSelector(selectFilter);
-  // console.log(contacts);
 
   const getVisibleContacts = () => {
     const normalizedFilter = filter.toLowerCase();
