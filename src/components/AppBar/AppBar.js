@@ -8,18 +8,16 @@ export const AppBar = () => {
   const { isLoggedIn } = useAuth();
 
   return (
-    <header>
-      <Container
-        sx={{
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          backgroundColor: '#3f51b5',
-        }}
-      >
-        <Navigation />
-        {isLoggedIn ? <UserMenu /> : <AuthNav />}
-      </Container>
-    </header>
+    <Container
+      sx={{
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        backgroundColor: '#3f51b5',
+      }}
+    >
+      <Navigation />
+      {isLoggedIn ? <UserMenu /> : <AuthNav />}
+    </Container>
   );
 };

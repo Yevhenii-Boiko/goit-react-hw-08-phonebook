@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
-import { Container } from '@mui/material';
+import { Container, IconButton } from '@mui/material';
+import css from './AuthNav.module.css';
 
 export const AuthNav = () => {
   return (
@@ -7,13 +8,21 @@ export const AuthNav = () => {
       <Container
         sx={{
           display: 'flex',
-          gap: '20px',
+          gap: '12px',
           alignItems: 'center',
           justifyContent: 'space-between',
         }}
       >
-        <NavLink to="/register">Register</NavLink>
-        <NavLink to="/login">Log In</NavLink>
+        <IconButton variant="contained">
+          <NavLink className={css.link} to="/register">
+            Register
+          </NavLink>
+        </IconButton>
+        <IconButton variant="contained">
+          <NavLink className={css.link} to="/login">
+            Log In
+          </NavLink>
+        </IconButton>
       </Container>
     </div>
   );

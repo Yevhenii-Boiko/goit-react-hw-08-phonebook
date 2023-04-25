@@ -5,6 +5,7 @@ import { ContactList } from 'components/ContactList/ContactList';
 import { Filter } from 'components/Filter/Filter';
 import { fetchContacts } from 'redux/contacts/operations';
 import { selectIsLoading } from 'redux/contacts/selectors';
+import { Paper } from '@mui/material';
 
 export default function Contacts() {
   const dispatch = useDispatch();
@@ -17,10 +18,21 @@ export default function Contacts() {
   return (
     <>
       <title>Your contacts</title>
-      <div>{isLoading && 'Loading...'}</div>
-      <ContactForm />
-      <Filter />
-      <ContactList />
+      <Paper
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          paddingTop: '20px',
+          borderRadius: 'none',
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}
+      >
+        <div>{isLoading && 'Loading...'}</div>
+        <ContactForm />
+        <Filter />
+        <ContactList />
+      </Paper>
     </>
   );
 }

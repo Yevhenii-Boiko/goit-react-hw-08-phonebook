@@ -4,7 +4,8 @@ import { selectContacts } from 'redux/contacts/selectors';
 import { Field, Formik } from 'formik';
 import { Toaster, toast } from 'react-hot-toast';
 import * as yup from 'yup';
-import { ErrorMessage, Form, FormField, Button } from './ContactForm.styled';
+import { ErrorMessage, Form, FormField } from './ContactForm.styled';
+import { Button } from '@mui/material';
 
 const schema = yup.object().shape({
   name: yup.string().required(),
@@ -55,7 +56,9 @@ export const ContactForm = () => {
             <Field type="tel" name="number" />
             <ErrorMessage name="number" component="span" />
           </FormField>
-          <Button type="submit">Add contact</Button>
+          <Button variant="contained" type="submit">
+            Add contact
+          </Button>
         </Form>
       </Formik>
     </>

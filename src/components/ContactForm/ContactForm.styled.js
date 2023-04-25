@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { ErrorMessage as FormikError, Form as FormikForm } from 'formik';
 
 export const Form = styled(FormikForm)`
-  width: 400px;
+  width: 300px;
   padding: 8px;
   margin-left: auto;
   margin-right: auto;
@@ -20,13 +20,13 @@ export const ErrorMessage = styled(FormikError)`
   color: tomato;
 `;
 
-export const Button = styled.button`
-  margin-bottom: 20px;
-  border-radius: 4px;
-  cursor: pointer;
-  &:hover,
-  &:focus {
-    color: white;
-    background: #188ce8;
-  }
-`;
+// export const Button = styled.button`
+//   margin-bottom: 20px;
+//   border-radius: 4px;
+//   cursor: pointer;
+//   &:hover,
+//   &:focus {
+//     color: white;
+//     background: #188ce8;
+//   }
+// `;

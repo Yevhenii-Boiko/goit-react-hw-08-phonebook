@@ -1,7 +1,8 @@
 import { useDispatch } from 'react-redux';
 import { deleteContact } from 'redux/contacts/operations';
 import { MdDelete } from 'react-icons/md';
-import { Item, ItemWrapper, Text, Button } from './ListItem.styled';
+import { Item, ItemWrapper, Text } from './ListItem.styled';
+import { Button } from '@mui/material';
 
 export const ListItem = ({ contact: { id, name, number } }) => {
   const dispatch = useDispatch();
@@ -14,7 +15,7 @@ export const ListItem = ({ contact: { id, name, number } }) => {
         <Text>{name}:</Text>
         <Text>{number}</Text>
 
-        <Button type="button" onClick={handleDelete}>
+        <Button variant="contained" type="button" onClick={handleDelete}>
           {/* Delete */}
           <MdDelete />
         </Button>

@@ -15,13 +15,13 @@ export const Text = styled.p`
   font-size: 20px;
 `;
 
-export const Button = styled.button`
-  border-radius: 4px;
-  /* border: none; */
-  cursor: pointer;
-  &:hover,
-  &:focus {
-    color: white;
-    background: #188ce8;
-  }
-`;
+// export const Button = styled.button`
+//   border-radius: 4px;
+//   /* border: none; */
+//   cursor: pointer;
+//   &:hover,
+//   &:focus {
+//     color: white;
+//     background: #188ce8;
+//   }
+// `;
