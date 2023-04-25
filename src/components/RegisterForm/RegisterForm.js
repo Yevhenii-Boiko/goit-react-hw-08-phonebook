@@ -49,7 +49,7 @@ export const RegisterForm = () => {
           justifyContent: 'center',
           alignItems: 'center',
           paddingTop: '60px',
-          paddingBottom: '60px',
+          paddingBottom: '600px',
         }}
       >
         <form onSubmit={handleSubmit} autoComplete="off">

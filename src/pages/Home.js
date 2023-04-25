@@ -15,15 +15,7 @@ export default function Home() {
         justifyContent: 'center',
       }}
     >
-      <Typography
-        variant="h1"
-        color="#f8f9fa"
-        fontWeight={700}
-        backgroundColor="#3f51b5"
-        borderRadius={4}
-        paddingLeft="10px"
-        paddingRight="10px"
-      >
+      <Typography variant="h1" color="#3f51b5" fontWeight={700}>
         Phonebook
       </Typography>
     </Paper>
